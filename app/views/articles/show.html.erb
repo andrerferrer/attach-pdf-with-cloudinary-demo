@@ -12,4 +12,6 @@
   <%= link_to rails_blob_path(@article.pdf, disposition: 'attachment'), target: "_blank" do %>
     <img style="width: 2em;" src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/15519179861536080156-512.png" alt="">
   <% end %>
+
+  <%= link_to "download", "https://api.cloudinary.com/v1_1/epem/image/download?api_key=#{ENV['CLOUDINARY_URL'].match(/:\/\/(\d+):/)[1]}&attachment=true&audit_context=eyJhY3Rvcl90eXBlIjoidXNlciIsImFjdG9yX2lkIjoiOThiMDI1MGIxOGU0YzkxYjlhYzg5ZWQ3NjYyMjk0ZjIiLCJ1c2VyX2V4dGVybmFsX2lkIjoiMzI0MTkzYjcyZDc5ZTY1ZjFjOWRhMzU3Y2RjNTNjIiwidXNlcl9jdXN0b21faWQiOiJlbWFpbHByYWVzc2FzbWVyZGFzQGdtYWlsLmNvbSIsImNvbXBvbmVudCI6ImNvbnNvbGUifQ%3D%3D&public_id=70bvegohjn6zovo18ez7lzikwxlf&signature=e019d379fd8a649c27291ec8a7a7e9d2f5888714&target_filename=#{@article.pdf.key}.pdf&timestamp=1606821241&type=upload"  %>
 </p>

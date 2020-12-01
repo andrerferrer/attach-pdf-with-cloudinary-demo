@@ -1,5 +1,7 @@
 This is a Demo for showcasing how to attach pdf to a model and upload it to cloudinary
 
+[You can also check my other demos](https://github.com/andrerferrer/dedemos/blob/master/README.md#ded%C3%A9mos).
+
 1. Install active storage and migrate
 ```shell
 rails active_storage:install

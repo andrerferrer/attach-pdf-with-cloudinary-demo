@@ -28,3 +28,7 @@ end
     1. Add it to the gemfile
     2. Set it up in config/storage.yml
     3. Configure it in config/environments/development.rb (and in production as well)
+    4. Set your cloudinary api key in the `.env` like this: 
+    ```
+      CLOUDINARY_URL=cloudinary://64*************em
+    ```

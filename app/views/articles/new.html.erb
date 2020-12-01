@@ -1,0 +1,7 @@
+<h1>Articles#new</h1>
+
+<%= simple_form_for @article do |f| %>
+  <%= f.input :title %>
+  <%= f.input :pdf, as: :file %>
+  <%= f.button :submit %>
+<% end %>

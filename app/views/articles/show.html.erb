@@ -1,0 +1,15 @@
+<h1>
+  <%= @article.title %>
+</h1>
+
+<p>
+  Preview it
+  <%= link_to @article.pdf.filename, rails_blob_path(@article.pdf, disposition: 'preview'), target: "_blank"  %>
+</p>
+
+<p>
+  Download it
+  <%= link_to rails_blob_path(@article.pdf, disposition: 'attachment'), target: "_blank" do %>
+    <img style="width: 2em;" src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/15519179861536080156-512.png" alt="">
+  <% end %>
+</p>

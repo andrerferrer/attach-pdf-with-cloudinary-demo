@@ -1,4 +1,4 @@
-This is a Demo for showcasing how to attach pdf to a model
+This is a Demo for showcasing how to attach pdf to a model and upload it to cloudinary
 
 1. Install active storage and migrate
 ```shell
@@ -23,3 +23,8 @@ end
 ```
 
 4. [Download or Preview the file](https://stackoverflow.com/a/51563268/10804246)
+
+5. Config cloudinary
+    1. Add it to the gemfile
+    2. Set it up in config/storage.yml
+    3. Configure it in config/environments/development.rb (and in production as well)

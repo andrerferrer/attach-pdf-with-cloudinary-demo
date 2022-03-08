@@ -34,3 +34,5 @@ end
     ```
       CLOUDINARY_URL=cloudinary://64*************em
     ```
+
+Check up the documentation -> https://cloudinary.com/documentation/paged_and_layered_media
